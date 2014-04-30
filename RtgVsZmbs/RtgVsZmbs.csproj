@@ -55,7 +55,9 @@
     </ApplicationDefinition>
     <Compile Include="GameEngine\FieldEngine.cs" />
     <Compile Include="GameEngine\SaveData.cs" />
+    <Compile Include="Objects\PTExercise.cs" />
     <Compile Include="Objects\Quizcard.cs" />
+    <Compile Include="Objects\SQLFactory.cs" />
     <Compile Include="ViewModel\GameView.cs" />
     <Compile Include="ViewModel\MenueView.cs" />
     <Compile Include="ViewModel\UserView.cs" />
