@@ -17,12 +17,12 @@ namespace RtgVsZmbs.Objects
         //TODO: UserEnum
         private bool IsAdmin;
         
-        public User(string name, string surname, string password, bool usertype)
+        private User(string name, string surname, string password, bool usertype)
         {
             this.Name = name;
             this.Surname = surname;
             this.Password = password;
-            this.IsAdmin = usertype
+            this.IsAdmin = usertype;
         }
     }
 }
