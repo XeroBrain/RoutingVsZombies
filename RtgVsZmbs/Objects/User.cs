@@ -8,21 +8,25 @@ namespace RtgVsZmbs.Objects
 {
     public class User
     {
-        private string Name;
-        private string Surname;
+        private string _name;
+
+        private string _surname;
+
+        private string _username;
 
         //TODO: Salt n stuff for save psw gen
-        private string Password;
+        private string _password;
 
         //TODO: UserEnum
-        private bool IsAdmin;
+        private bool _isAdmin;
         
-        public User(string name, string surname, string password, bool usertype)
+        public User(string name, string surname, string username, string password, bool usertype)
         {
-            this.Name = name;
-            this.Surname = surname;
-            this.Password = password;
-            this.IsAdmin = usertype
+            this._name = name;
+            this._surname = surname;
+            this._password = password;
+            this._isAdmin = usertype;
+            this._username = username;
         }
     }
 }

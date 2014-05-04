@@ -19,17 +19,17 @@ namespace RtgVsZmbs.Objects
             // this is an utility class and must not be extended
         }
 
-        public static Quizcard[] getAllQuizcards()
+        public static Quizcard[] GetAllQuizcards()
         {
             return null;
         }
 
-        public static Quizcard getQuizcard(long id)
+        public Quizcard GetQuizcard(long id)
         {
             return null;
         }
 
-        public static bool saveQuizcard(Quizcard qc)
+        public static bool SaveQuizcard(Quizcard qc)
         {
             return false;
         }

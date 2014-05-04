@@ -8,48 +8,31 @@ namespace RtgVsZmbs.Objects
 {
     class Quizcard
     {
-        private long id;
-        private String question;
-        private QuizAnswer[] answers;
+        public int MaximumPoints { get; private set; }
 
-        private Quizcard(long id, String question, QuizAnswer[] answers)
+        private int AchievedPoints { get; set; }
+
+        private Quizcard(int id, string question, QuizAnswer[] answers, int maxPoints)
         {
-            this.id = id;
-            this.question = question;
-            this.answers = answers;
+            this.Id = id;
+            this.Question = question;
+            this.Answers = answers;
+            this.MaximumPoints = maxPoints;
         }
 
-        public long getId
+        public int Id { get; private set; }
+
+        public string Question { get; private set; }
+
+        public QuizAnswer[] Answers { get; private set; }
+
+        public long AnswerCount
         {
             get
             {
-                return id;
-            }
-        }
-
-        public String getQuestion
-        {
-            get
-            {
-                return question;
-            }
-        }
-
-        public QuizAnswer[] getAnswers
-        {
-            get
-            {
-                return answers;
-            }
-        }
-
-        public long answerCount
-        {
-            get
-            {
-                if (answers != null)
+                if (Answers != null)
                 {
-                    return answers.LongLength;
+                    return Answers.LongLength;
                 }
                 return 0;
             }
