@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RtgVsZmbs.ViewModel
 {
-    class GameView
+    class UserViewModel
     {
     }
 }
