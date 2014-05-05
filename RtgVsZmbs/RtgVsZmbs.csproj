@@ -59,6 +59,7 @@
     <Compile Include="Objects\Quizcard.cs" />
     <Compile Include="Objects\ADOFactory.cs" />
     <Compile Include="Objects\XMLFactory.cs" />
+    <Compile Include="Properties\Annotations.cs" />
     <Compile Include="ViewModel\GameView.cs" />
     <Compile Include="ViewModel\MenueView.cs" />
     <Compile Include="ViewModel\UserView.cs" />
