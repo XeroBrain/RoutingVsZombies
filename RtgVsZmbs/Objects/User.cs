@@ -9,6 +9,7 @@ namespace RtgVsZmbs.Objects
     public class User
     {
         private string Name;
+
         private string Surname;
 
         //TODO: Salt n stuff for save psw gen
