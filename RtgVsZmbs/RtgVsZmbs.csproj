@@ -59,11 +59,24 @@
     <Compile Include="Objects\Quizcard.cs" />
     <Compile Include="Objects\ADOFactory.cs" />
     <Compile Include="Objects\XMLFactory.cs" />
+    <Compile Include="obj\Debug\App.g.cs" />
+    <Compile Include="obj\Debug\App.g.i.cs" />
+    <Compile Include="obj\Debug\LoginWindow.g.i.cs" />
+    <Compile Include="obj\Debug\MainWindow.g.cs" />
+    <Compile Include="obj\Debug\MainWindow.g.i.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="obj\Debug\View\GameFieldView.g.i.cs" />
+    <Compile Include="obj\Debug\View\HandleMenueView.g.i.cs" />
+    <Compile Include="obj\Debug\View\LoginView.g.i.cs" />
+    <Compile Include="obj\Debug\View\MainMenueView.g.i.cs" />
+    <Compile Include="obj\Debug\View\TaskView.g.i.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="ViewModel\GameFieldViewModel.cs" />
+    <Compile Include="ViewModel\HandleMenueViewModel.cs" />
     <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="ViewModel\MainMenueViewModel.cs" />
-    <Compile Include="ViewModel\HandleMenueViewModel.cs" />
     <Compile Include="ViewModel\TaskViewModel.cs" />
     <Compile Include="ViewModel\UserViewModel.cs" />
     <Compile Include="View\GameFieldView.xaml.cs">
@@ -94,24 +107,24 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="View\GameFieldView.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="View\HandleMenueView.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="View\LoginView.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="View\MainMenueView.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="View\TaskView.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -129,10 +142,19 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="obj\Debug\RtgVsZmbs.g.resources" />
+    <EmbeddedResource Include="obj\Debug\RtgVsZmbs.Properties.Resources.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="bin\Debug\RtgVsZmbs.exe.config" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\MainWindow.baml" />
+    <None Include="obj\Debug\RtgVsZmbs.csproj.GenerateResource.Cache" />
+    <None Include="obj\Debug\RtgVsZmbs.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\Debug\RtgVsZmbs_MarkupCompile.cache" />
+    <None Include="obj\Debug\RtgVsZmbs_MarkupCompile.i.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -146,6 +168,17 @@
     <Resource Include="DB\RvsZ_MDB.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\RtgVsZmbs.exe" />
+    <Content Include="bin\Debug\RtgVsZmbs.pdb" />
+    <Resource Include="obj\Debug\RtgVsZmbs.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\RtgVsZmbs.exe" />
+    <Content Include="obj\Debug\RtgVsZmbs.pdb" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

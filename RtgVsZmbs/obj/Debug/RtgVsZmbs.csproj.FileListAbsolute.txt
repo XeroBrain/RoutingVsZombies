@@ -1,0 +1,13 @@
+C:\Users\miller\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\bin\Debug\RtgVsZmbs.exe.config
+C:\Users\miller\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\bin\Debug\RtgVsZmbs.exe
+C:\Users\miller\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\bin\Debug\RtgVsZmbs.pdb
+C:\Users\miller\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmbs.csprojResolveAssemblyReference.cache
+C:\Users\miller\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\App.g.cs
+C:\Users\miller\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmbs_MarkupCompile.cache
+C:\Users\miller\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmbs.g.resources
+C:\Users\miller\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmbs.Properties.Resources.resources
+C:\Users\miller\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmbs.csproj.GenerateResource.Cache
+C:\Users\miller\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmbs.exe
+C:\Users\miller\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmbs.pdb
+C:\Users\miller\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\MainWindow.baml
+C:\Users\miller\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\MainWindow.g.cs
