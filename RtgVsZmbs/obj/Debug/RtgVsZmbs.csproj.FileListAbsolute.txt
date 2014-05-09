@@ -34,14 +34,4 @@ C:\GIT\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmbs.Properties.Resources.resou
 C:\GIT\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmbs.csproj.GenerateResource.Cache
 C:\GIT\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmbs.exe
 C:\GIT\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmbs.pdb
-C:\Users\miller\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\View\GameFieldView.baml
-C:\Users\miller\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\View\HandleMenueView.baml
-C:\Users\miller\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\View\LoginView.baml
-C:\Users\miller\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\View\MainMenueView.baml
-C:\Users\miller\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\View\TaskView.baml
-C:\Users\miller\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\View\GameFieldView.g.cs
-C:\Users\miller\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\View\HandleMenueView.g.cs
-C:\Users\miller\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\View\LoginView.g.cs
-C:\Users\miller\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\View\MainMenueView.g.cs
-C:\Users\miller\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\View\TaskView.g.cs
-C:\Users\miller\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmbs_Content.g.cs
+C:\GIT\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmbs.csprojResolveAssemblyReference.cache
