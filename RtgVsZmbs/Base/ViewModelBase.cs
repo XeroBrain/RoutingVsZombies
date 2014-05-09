@@ -20,7 +20,7 @@ namespace RtgVsZmbs.Base
 
         #region Member
 
-        //es wird der Name des Propertys welches sich andert hier eingetragen.
+        //es wird der Name des Property welches sich ändert hier eingetragen.
         protected void OnPropertyChanged(string name)
         {
             PropertyChangedEventHandler handler = PropertyChanged;

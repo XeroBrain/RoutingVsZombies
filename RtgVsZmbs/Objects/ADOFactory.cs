@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data.OleDb;
-
-namespace RtgVsZmbs.Objects
+﻿namespace RtgVsZmbs.Objects
 {
+    using System;
+
+    using RtgVsZmbs.Data;
+
     class ADOFactory
     {
         private String mdbFilepath = "\\DB\\RvsZ_MDB.mdb";

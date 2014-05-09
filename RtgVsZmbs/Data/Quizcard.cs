@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RtgVsZmbs.Objects
+﻿namespace RtgVsZmbs.Data
 {
+    using System.Collections.Generic;
+
+    using RtgVsZmbs.Objects;
+
     class Quizcard
     {
         public int MaximumPoints { get; private set; }
@@ -17,13 +15,14 @@ namespace RtgVsZmbs.Objects
             {
                 return _achievedPoints;
             }
+            //Sollte die Frage bearbeitet worden sein, wird das AlreadyAnswered flag true gesetzt
             set
             {
                 if (value > 0)
                 {
                     AlreadyAnswered = true;
                 }
-                this._achievedPoints = value;
+                _achievedPoints = value;
                 ;
             } }
 
@@ -31,30 +30,19 @@ namespace RtgVsZmbs.Objects
 
         private Quizcard(int id, string question, List<QuizAnswer> answers, int maxPoints)
         {
-            this.Id = id;
-            this.Question = question;
-            this.Answers = answers;
-            this.MaximumPoints = maxPoints;
-            this._achievedPoints = 0;
-            this.AlreadyAnswered = false;
+            ID = id;
+            Question = question;
+            Answers = answers;
+            MaximumPoints = maxPoints;
+            AlreadyAnswered = false;
         }
 
-        public int Id { get; private set; }
+        public int ID { get; private set; }
 
         public string Question { get; private set; }
 
         public List<QuizAnswer> Answers { get; private set; }
 
-        public int AnswerCount
-        {
-            get
-            {
-                if (Answers != null)
-                {
-                    return Answers.Count();
-                }
-                return 0;
-            }
-        }
+        
     }
 }

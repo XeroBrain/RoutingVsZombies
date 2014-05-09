@@ -8,6 +8,7 @@ namespace RtgVsZmbs.GameEngine
 {
     using System.Security.Policy;
 
+    using RtgVsZmbs.Data;
     using RtgVsZmbs.Objects;
 
     internal class FieldEngine

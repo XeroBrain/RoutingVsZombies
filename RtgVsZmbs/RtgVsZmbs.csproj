@@ -59,8 +59,10 @@
     <Compile Include="GameEngine\SaveData.cs" />
     <Compile Include="Data\QuizAnswer.cs" />
     <Compile Include="Data\Quizcard.cs" />
-    <Compile Include="Data\ADOFactory.cs" />
-    <Compile Include="Data\XMLFactory.cs" />
+    <Compile Include="Objects\ADOFactory.cs" />
+    <Compile Include="Objects\PTExercise.cs" />
+    <Compile Include="Objects\SQLFactory.cs" />
+    <Compile Include="Objects\XMLFactory.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="ViewModel\GameFieldViewModel.cs" />
     <Compile Include="ViewModel\HandleMenueViewModel.cs" />
@@ -83,8 +85,6 @@
     <Compile Include="View\TaskView.xaml.cs">
       <DependentUpon>TaskView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Data\PTExercise.cs" />
-    <Compile Include="Data\SQLFactory.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -154,7 +154,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />
-    <Folder Include="Service\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\RtgVsZmbs.exe" />
