@@ -55,10 +55,10 @@
     </ApplicationDefinition>
     <Compile Include="GameEngine\FieldEngine.cs" />
     <Compile Include="GameEngine\SaveData.cs" />
-    <Compile Include="Objects\QuizAnswer.cs" />
-    <Compile Include="Objects\Quizcard.cs" />
-    <Compile Include="Objects\ADOFactory.cs" />
-    <Compile Include="Objects\XMLFactory.cs" />
+    <Compile Include="Data\QuizAnswer.cs" />
+    <Compile Include="Data\Quizcard.cs" />
+    <Compile Include="Data\ADOFactory.cs" />
+    <Compile Include="Data\XMLFactory.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="ViewModel\GameFieldViewModel.cs" />
     <Compile Include="ViewModel\HandleMenueViewModel.cs" />
@@ -81,8 +81,8 @@
     <Compile Include="View\TaskView.xaml.cs">
       <DependentUpon>TaskView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Objects\PTExercise.cs" />
-    <Compile Include="Objects\SQLFactory.cs" />
+    <Compile Include="Data\PTExercise.cs" />
+    <Compile Include="Data\SQLFactory.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -117,7 +117,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Objects\User.cs" />
+    <Compile Include="Data\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -152,6 +152,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />
+    <Folder Include="Service\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\RtgVsZmbs.exe" />

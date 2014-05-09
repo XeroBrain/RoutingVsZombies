@@ -34,3 +34,4 @@ C:\GIT\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmbs.Properties.Resources.resou
 C:\GIT\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmbs.csproj.GenerateResource.Cache
 C:\GIT\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmbs.exe
 C:\GIT\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmbs.pdb
+C:\GIT\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmbs.csprojResolveAssemblyReference.cache
