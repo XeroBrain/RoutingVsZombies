@@ -53,6 +53,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Base\RelayCommand.cs" />
+    <Compile Include="Base\ViewModelBase.cs" />
     <Compile Include="GameEngine\FieldEngine.cs" />
     <Compile Include="GameEngine\SaveData.cs" />
     <Compile Include="Data\QuizAnswer.cs" />
