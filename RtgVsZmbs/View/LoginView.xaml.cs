@@ -23,5 +23,30 @@ namespace RtgVsZmbs.View
         {
             InitializeComponent();
         }
+
+        private void LoginButtonClick(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                var username = UserField.GetLineText(0);
+
+                var password = PasswordField.Password;
+
+                if (username.Any() && password.Any())
+                {
+                    var mainWindow = new MainMenueView();
+                    mainWindow.Show();
+                    Close();
+                }
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
+           
+
+            
+        }
     }
 }

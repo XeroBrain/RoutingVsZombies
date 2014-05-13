@@ -15,6 +15,8 @@ using System.Windows.Shapes;
 
 namespace RtgVsZmbs
 {
+    using RtgVsZmbs.View;
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
@@ -23,6 +25,17 @@ namespace RtgVsZmbs
         public MainWindow()
         {
             InitializeComponent();
+
         }
+
+        private void StartButtonButtonClick(object sender, RoutedEventArgs e)
+        {
+            var login = new LoginView();
+            login.Show();
+            StartButton.IsEnabled = false;
+            Close();
+        }
+
+
     }
 }

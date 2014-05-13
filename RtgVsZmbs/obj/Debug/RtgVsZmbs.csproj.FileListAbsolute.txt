@@ -35,3 +35,4 @@ C:\GIT\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmbs.csproj.GenerateResource.Ca
 C:\GIT\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmbs.exe
 C:\GIT\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmbs.pdb
 C:\GIT\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmbs.csprojResolveAssemblyReference.cache
+C:\GIT\RoutingVsZombies\RtgVsZmbs\obj\Debug\GeneratedInternalTypeHelper.g.cs

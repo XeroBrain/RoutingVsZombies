@@ -3,6 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Button Content="Start Game" Background="#BADA55" Height="80" Width="150"></Button>
+        <Button x:Name="StartButton" Content="Start Game" Background="#BADA55" Height="80" Width="150" Click="StartButtonButtonClick"></Button>
     </Grid>
 </Window>
