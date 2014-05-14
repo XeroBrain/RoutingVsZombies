@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using RtgVsZmbs.Objects;
 
 namespace RtgVsZmbs.View
 {
@@ -19,8 +20,10 @@ namespace RtgVsZmbs.View
     /// </summary>
     public partial class MainMenueView : Window
     {
-        public MainMenueView()
+        private User _currentUser;
+        public MainMenueView(User currentUser)
         {
+            _currentUser = currentUser;
             InitializeComponent();
         }
 

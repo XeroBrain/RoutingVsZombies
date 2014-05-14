@@ -10,6 +10,8 @@ namespace RtgVsZmbs.Objects
     {
         private string _name;
 
+        private Int32 _ID;
+
         private string _surname;
 
         private string _username;
@@ -20,13 +22,14 @@ namespace RtgVsZmbs.Objects
         //TODO: UserEnum
         private bool _isAdmin;
         
-        public User(string name, string surname, string username, string password, bool usertype)
+        public User(Int32 id,string name, string surname, string username, string password, bool usertype)
         {
             this._name = name;
             this._surname = surname;
             this._password = password;
             this._isAdmin = usertype;
             this._username = username;
+            _ID = id;
         }
     }
 }

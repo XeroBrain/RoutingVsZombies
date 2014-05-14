@@ -34,7 +34,7 @@ namespace RtgVsZmbs.View
 
                 if (username.Any() && password.Any())
                 {
-                    var mainWindow = new MainMenueView();
+                    var mainWindow = new MainMenueView(null);
                     mainWindow.Show();
                     Close();
                 }

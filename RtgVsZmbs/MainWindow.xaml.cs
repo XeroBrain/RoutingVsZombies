@@ -12,6 +12,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data.SqlClient;
+using System.Security.Cryptography;
+using System.Data;
+using RtgVsZmbs.Objects;
 
 namespace RtgVsZmbs
 {
@@ -29,18 +33,36 @@ namespace RtgVsZmbs
 
         private void LoginButtonClick(object sender, RoutedEventArgs e)
         {
-           
-                var username = UserField.GetLineText(0);
-
-                var password = PasswordField.Password;
-
-                //TODO: Login Validation
-            bool loginValidation = username.Any() && password.Any();
+            bool loginValidation = false;
+            User currentUser= null;
+            var username = UserField.GetLineText(0);                          
+            var password = GenerateHash(PasswordField.Password);
+            using (SqlConnection connection = new SqlConnection("Data Source=85.183.21.62,1433;"+"Initial Catalog=RoutingVsZombie;"+"User id=RVZLogin;"+"Password=ZombieNation21!;"))
+            {
+                DataTable dataTable = new DataTable();
+                SqlDataAdapter adapter = new SqlDataAdapter();
+                adapter.SelectCommand = new SqlCommand("Select usrid,usrLogin,usrIsAdmin from Users where usrLogin=@Login and usrPassword=@Password",connection);
+                adapter.SelectCommand.Parameters.Add("@Login", SqlDbType.VarChar);
+                adapter.SelectCommand.Parameters["@Login"].Value = username;
+                adapter.SelectCommand.Parameters.Add("@Password", SqlDbType.VarChar);
+                adapter.SelectCommand.Parameters["@Password"].Value = password;
+                adapter.Fill(dataTable);
+                if(dataTable.Rows.Count == 1)
+                { 
+                    loginValidation = true;
+                    currentUser = new User((Int32)dataTable.Rows[0]["usrid"], "", "", (String)dataTable.Rows[0]["usrLogin"], "", (Boolean)dataTable.Rows[0]["usrIsAdmin"]);             
+                }           
+            }            
 
             if (loginValidation)
             {
+<<<<<<< HEAD
                 var menue = new MainMenueView();
                 menue.Show();
+=======
+                var mainWindow = new MainMenueView(currentUser);
+                mainWindow.Show();
+>>>>>>> Login
                 Close();
             }
             else
@@ -49,6 +71,16 @@ namespace RtgVsZmbs
             }
 
 
+        }
+        
+        public static string GenerateHash(string text, Encoding enc = null)
+        {
+            if (enc == null)
+                enc = Encoding.UTF8;
+
+            byte[] buffer = enc.GetBytes(text);
+            SHA512CryptoServiceProvider cryptoTransformSHA512 = new SHA512CryptoServiceProvider();
+            return BitConverter.ToString(cryptoTransformSHA512.ComputeHash(buffer)).Replace("-", string.Empty);
         }
     }
 }
