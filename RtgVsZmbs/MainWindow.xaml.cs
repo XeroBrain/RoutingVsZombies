@@ -24,18 +24,31 @@ namespace RtgVsZmbs
     {
         public MainWindow()
         {
-            InitializeComponent();
-
+          InitializeComponent();
         }
 
-        private void StartButtonButtonClick(object sender, RoutedEventArgs e)
+        private void LoginButtonClick(object sender, RoutedEventArgs e)
         {
-            var login = new LoginView();
-            login.Show();
-            StartButton.IsEnabled = false;
-            Close();
+           
+                var username = UserField.GetLineText(0);
+
+                var password = PasswordField.Password;
+
+                //TODO: Login Validation
+            bool loginValidation = username.Any() && password.Any();
+
+            if (loginValidation)
+            {
+                var mainWindow = new MainMenueView();
+                mainWindow.Show();
+                Close();
+            }
+            else
+            {
+                InvalidLoginTxt.Visibility = Visibility.Visible;
+            }
+
+
         }
-
-
     }
 }
