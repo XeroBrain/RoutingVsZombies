@@ -39,7 +39,7 @@ namespace RtgVsZmbs.View
 
         private void UeberlebenshandbuchClick(object sender, RoutedEventArgs e)
         {
-            var survivalguide = new QuizcardsView();
+            var survivalguide = new SurvivalguideView();
             survivalguide.Show();
         }
 

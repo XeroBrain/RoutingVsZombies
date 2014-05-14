@@ -17,10 +17,10 @@ namespace RtgVsZmbs.View
     /// <summary>
     /// Interaction logic for QuizcardsView.xaml
     /// </summary>
-    public partial class QuizcardsView : Window
+    public partial class SurvivalguideView : Window
     {
         
-        public QuizcardsView()
+        public SurvivalguideView()
         {
             InitializeComponent();
         }

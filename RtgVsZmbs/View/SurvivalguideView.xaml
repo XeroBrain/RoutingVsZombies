@@ -1,4 +1,4 @@
-﻿<Window x:Class="RtgVsZmbs.View.QuizcardsView"
+﻿<Window x:Class="RtgVsZmbs.View.SurvivalguideView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="QuizcardsView" Height="350" Width="320">
