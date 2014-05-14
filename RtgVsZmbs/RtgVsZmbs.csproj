@@ -82,6 +82,9 @@
     <Compile Include="View\MainMenueView.xaml.cs">
       <DependentUpon>MainMenueView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\QuizcardsView.xaml.cs">
+      <DependentUpon>QuizcardsView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\TaskView.xaml.cs">
       <DependentUpon>TaskView.xaml</DependentUpon>
     </Compile>
@@ -112,6 +115,10 @@
     <Page Include="View\MainMenueView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\QuizcardsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\TaskView.xaml">
       <Generator>MSBuild:Compile</Generator>

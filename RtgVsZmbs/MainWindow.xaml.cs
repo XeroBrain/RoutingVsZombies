@@ -37,11 +37,14 @@ namespace RtgVsZmbs
             User currentUser= null;
             var username = UserField.GetLineText(0);                          
             var password = GenerateHash(PasswordField.Password);
-            using (SqlConnection connection = new SqlConnection("Data Source=85.183.21.62,1433;"+"Initial Catalog=RoutingVsZombie;"+"User id=RVZLogin;"+"Password=ZombieNation21!;"))
+            using (var connection = new SqlConnection("Data Source=85.183.21.62,1433;"+"Initial Catalog=RoutingVsZombie;"+"User id=RVZLogin;"+"Password=ZombieNation21!;"))
             {
-                DataTable dataTable = new DataTable();
-                SqlDataAdapter adapter = new SqlDataAdapter();
-                adapter.SelectCommand = new SqlCommand("Select usrid,usrLogin,usrIsAdmin from Users where usrLogin=@Login and usrPassword=@Password",connection);
+                var dataTable = new DataTable();
+                var adapter = new SqlDataAdapter
+                                  {
+                                      SelectCommand =
+                                          new SqlCommand("Select usrid,usrLogin,usrIsAdmin from Users where usrLogin=@Login and usrPassword=@Password", connection)
+                                  };
                 adapter.SelectCommand.Parameters.Add("@Login", SqlDbType.VarChar);
                 adapter.SelectCommand.Parameters["@Login"].Value = username;
                 adapter.SelectCommand.Parameters.Add("@Password", SqlDbType.VarChar);
@@ -74,8 +77,8 @@ namespace RtgVsZmbs
                 enc = Encoding.UTF8;
 
             byte[] buffer = enc.GetBytes(text);
-            SHA512CryptoServiceProvider cryptoTransformSHA512 = new SHA512CryptoServiceProvider();
-            return BitConverter.ToString(cryptoTransformSHA512.ComputeHash(buffer)).Replace("-", string.Empty);
+            var cryptoTransformSha512 = new SHA512CryptoServiceProvider();
+            return BitConverter.ToString(cryptoTransformSha512.ComputeHash(buffer)).Replace("-", string.Empty);
         }
     }
 }

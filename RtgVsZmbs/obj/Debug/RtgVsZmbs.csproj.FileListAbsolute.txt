@@ -58,3 +58,5 @@ C:\Users\meins100\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmb
 C:\Users\meins100\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmbs.g.resources
 C:\Users\meins100\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmbs.Properties.Resources.resources
 C:\Users\meins100\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmbs.csproj.GenerateResource.Cache
+C:\GIT\RoutingVsZombies\RtgVsZmbs\obj\Debug\View\QuizcardsView.baml
+C:\GIT\RoutingVsZombies\RtgVsZmbs\obj\Debug\View\QuizcardsView.g.cs

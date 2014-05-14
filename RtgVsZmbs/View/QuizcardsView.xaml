@@ -1,0 +1,9 @@
+﻿<Window x:Class="RtgVsZmbs.View.QuizcardsView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="QuizcardsView" Height="350" Width="320">
+    <Grid>
+        <ListBox ItemsSource="{Binding QuizcardList}" HorizontalAlignment="Left" Height="300" Margin="0,0,0,0" VerticalAlignment="Top" Width="300"/>
+
+    </Grid>
+</Window>
