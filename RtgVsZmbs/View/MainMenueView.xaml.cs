@@ -23,5 +23,22 @@ namespace RtgVsZmbs.View
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var logout = new LoginView();
+            logout.Show();
+            Close();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+
+
+
+
     }
 }
