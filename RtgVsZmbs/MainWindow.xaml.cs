@@ -16,6 +16,7 @@ using System.Data.SqlClient;
 using System.Security.Cryptography;
 using System.Data;
 using RtgVsZmbs.Objects;
+using RtgVsZmbs.Data;
 
 namespace RtgVsZmbs
 {
@@ -52,7 +53,7 @@ namespace RtgVsZmbs
                     loginValidation = true;
                     currentUser = new User((Int32)dataTable.Rows[0]["usrid"], "", "", (String)dataTable.Rows[0]["usrLogin"], "", (Boolean)dataTable.Rows[0]["usrIsAdmin"]);             
                 }           
-            }            
+            }
 
             if (loginValidation)
             {                
