@@ -40,7 +40,6 @@ C:\Users\meins100\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmb
 C:\Users\meins100\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmbs.pdb
 C:\Users\meins100\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\bin\Debug\RtgVsZmbs.exe
 C:\Users\meins100\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\bin\Debug\RtgVsZmbs.pdb
-C:\Users\meins100\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmbs.csprojResolveAssemblyReference.cache
 C:\Users\meins100\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\MainWindow.baml
 C:\Users\meins100\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\View\GameFieldView.baml
 C:\Users\meins100\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\View\HandleMenueView.baml
