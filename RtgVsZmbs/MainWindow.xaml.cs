@@ -38,6 +38,8 @@ namespace RtgVsZmbs
             User currentUser= null;
             var username = UserField.GetLineText(0);                          
             var password = GenerateHash(PasswordField.Password);
+            Guides gui = new Guides();
+            gui.LoadGuides();
             using (var connection = new SqlConnection("Data Source=85.183.21.62,1433;"+"Initial Catalog=RoutingVsZombie;"+"User id=RVZLogin;"+"Password=ZombieNation21!;"))
             {
                 var dataTable = new DataTable();

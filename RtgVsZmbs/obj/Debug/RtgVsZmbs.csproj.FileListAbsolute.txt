@@ -61,3 +61,5 @@ C:\Users\meins100\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmb
 C:\Users\meins100\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmbs.csprojResolveAssemblyReference.cache
 C:\GIT\RoutingVsZombies\RtgVsZmbs\obj\Debug\View\SurvivalguideView.baml
 C:\GIT\RoutingVsZombies\RtgVsZmbs\obj\Debug\View\SurvivalguideView.g.cs
+C:\Users\meins100\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\View\SurvivalguideView.baml
+C:\Users\meins100\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\View\SurvivalguideView.g.cs

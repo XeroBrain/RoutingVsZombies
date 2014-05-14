@@ -55,6 +55,8 @@
     </ApplicationDefinition>
     <Compile Include="Base\RelayCommand.cs" />
     <Compile Include="Base\ViewModelBase.cs" />
+    <Compile Include="Data\Guide.cs" />
+    <Compile Include="Data\Guides.cs" />
     <Compile Include="GameEngine\FieldEngine.cs" />
     <Compile Include="GameEngine\SaveData.cs" />
     <Compile Include="Data\QuizAnswer.cs" />
