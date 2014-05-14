@@ -55,14 +55,9 @@ namespace RtgVsZmbs
             }            
 
             if (loginValidation)
-            {
-<<<<<<< HEAD
-                var menue = new MainMenueView();
-                menue.Show();
-=======
+            {                
                 var mainWindow = new MainMenueView(currentUser);
                 mainWindow.Show();
->>>>>>> Login
                 Close();
             }
             else
