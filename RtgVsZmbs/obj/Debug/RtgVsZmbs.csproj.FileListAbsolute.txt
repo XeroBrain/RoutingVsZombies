@@ -89,3 +89,5 @@ C:\GIT\GitHub\RoutingVsZombies\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmbs.Pr
 C:\GIT\GitHub\RoutingVsZombies\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmbs.csproj.GenerateResource.Cache
 C:\GIT\GitHub\RoutingVsZombies\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmbs.exe
 C:\GIT\GitHub\RoutingVsZombies\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmbs.pdb
+C:\GIT\GitHub\RoutingVsZombies\RoutingVsZombies\RtgVsZmbs\obj\Debug\View\UserOverviewView.baml
+C:\GIT\GitHub\RoutingVsZombies\RoutingVsZombies\RtgVsZmbs\obj\Debug\View\UserOverviewView.g.cs
