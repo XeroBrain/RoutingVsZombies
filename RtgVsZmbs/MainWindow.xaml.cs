@@ -56,7 +56,7 @@ namespace RtgVsZmbs
                 if(dataTable.Rows.Count == 1)
                 { 
                     loginValidation = true;
-                    currentUser = new User((Int32)dataTable.Rows[0]["usrid"], "", "", (String)dataTable.Rows[0]["usrLogin"], "", (Boolean)dataTable.Rows[0]["usrIsAdmin"]);             
+                    currentUser = new User((Int32)dataTable.Rows[0]["usrid"], (String)dataTable.Rows[0]["usrLogin"], "", (Boolean)dataTable.Rows[0]["usrIsAdmin"]);             
                 }           
             }
 

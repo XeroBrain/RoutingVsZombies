@@ -21,7 +21,7 @@
             return null;
         }
 
-        public Quizcard GetQuizcard(long id)
+        public Quizcard GetQuizcard(Int64 id)
         {
             return null;
         }
