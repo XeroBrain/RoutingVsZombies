@@ -44,10 +44,9 @@ namespace RtgVsZmbs
             {
                 var dataTable = new DataTable();
                 var adapter = new SqlDataAdapter
-                                  {
-                                      SelectCommand =
-                                          new SqlCommand("Select usrid,usrLogin,usrIsAdmin from Users where usrLogin=@Login and usrPassword=@Password", connection)
-                                  };
+                {
+                    SelectCommand = new SqlCommand("Select usrid,usrLogin,usrIsAdmin from Users where usrLogin=@Login and usrPassword=@Password", connection)
+                };
                 adapter.SelectCommand.Parameters.Add("@Login", SqlDbType.VarChar);
                 adapter.SelectCommand.Parameters["@Login"].Value = username;
                 adapter.SelectCommand.Parameters.Add("@Password", SqlDbType.VarChar);
