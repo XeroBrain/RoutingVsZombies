@@ -10,11 +10,11 @@ namespace RtgVsZmbs.Objects
     {
         private string _name;
 
-        private Int32 _ID;
+        private Int64 _ID;
 
-        private string _surname;
+        public string _surname { get; set; }
 
-        private string _username;
+        public string _username { get; set; }
 
         //TODO: Salt n stuff for save psw gen
         private string _password;
@@ -22,14 +22,13 @@ namespace RtgVsZmbs.Objects
         //TODO: UserEnum
         private bool _isAdmin;
         
-        public User(Int32 id,string name, string surname, string username, string password, bool usertype)
+        public User(Int64 id, string username, string password, bool usertype)
         {
-            this._name = name;
-            this._surname = surname;
-            this._password = password;
-            this._isAdmin = usertype;
-            this._username = username;
+            _password = password;
+            _isAdmin = usertype;
+            _username = username;
             _ID = id;
         }
+        
     }
 }
