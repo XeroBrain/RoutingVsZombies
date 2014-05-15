@@ -57,7 +57,7 @@ namespace RtgVsZmbs
                     loginValidation = true;
                     currentUser = new User((Int32)dataTable.Rows[0]["usrid"], (String)dataTable.Rows[0]["usrLogin"], "", (Boolean)dataTable.Rows[0]["usrIsAdmin"]);             
                 }           
-            }
+            }           
 
             if (loginValidation)
             {                
@@ -81,6 +81,6 @@ namespace RtgVsZmbs
             byte[] buffer = enc.GetBytes(text);
             var cryptoTransformSha512 = new SHA512CryptoServiceProvider();
             return BitConverter.ToString(cryptoTransformSha512.ComputeHash(buffer)).Replace("-", string.Empty);
-        }
+        }       
     }
 }

@@ -23,8 +23,19 @@ namespace RtgVsZmbs.View
         public UserOverviewView()
         {
             InitializeComponent();
+            LoadUsers();
         }
 
         private List<User> UserList;
+
+        public void LoadUsers()
+        {
+            UserList = new List<User>();
+            var users = SQLFactory.getAllUsers();
+            foreach(var user in users)
+            {
+                UserList.Add(user);
+            }
+        }
     }
 }

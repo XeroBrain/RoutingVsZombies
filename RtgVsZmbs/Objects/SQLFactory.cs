@@ -100,16 +100,15 @@ namespace RtgVsZmbs.Objects
 
         public static User[] getAllUsers()
         {
-            String sqlStatement = "SELECT usrLogin, usrPassword, usrIsAdmin " +
+            String sqlStatement = "SELECT usrid,usrLogin, usrPassword, usrIsAdmin " +
                                   "FROM Users;";
             SqlCommand sqlcommand = _sqlcon.CreateCommand();
             sqlcommand.CommandText = sqlStatement;
             SqlDataReader sqldata = sqlcommand.ExecuteReader();
             List<User> users = new List<User>();
-            if (sqldata.Read())
+            while (sqldata.Read())
             {
-                users.Add(new User(sqldata.GetInt64(1), sqldata.GetString(4), sqldata.GetString(3),
-                    sqldata.GetBoolean(2)));
+                users.Add(new User(sqldata.GetInt32(0), sqldata.GetString(1), sqldata.GetString(2),sqldata.GetBoolean(3)));
             }
             sqldata.Close();
             return users.ToArray();
