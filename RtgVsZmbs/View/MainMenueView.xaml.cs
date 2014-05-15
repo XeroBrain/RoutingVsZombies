@@ -39,7 +39,7 @@ namespace RtgVsZmbs.View
         {
             var userOverview = new UserOverviewView();
             userOverview.Activate();
-
+            userOverview.Show();
         }
 
 
