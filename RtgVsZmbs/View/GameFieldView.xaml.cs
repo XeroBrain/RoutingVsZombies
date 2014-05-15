@@ -23,5 +23,7 @@ namespace RtgVsZmbs.View
         {
             InitializeComponent();
         }
+
+
     }
 }

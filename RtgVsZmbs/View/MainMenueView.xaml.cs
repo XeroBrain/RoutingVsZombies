@@ -50,6 +50,8 @@ namespace RtgVsZmbs.View
 
         private void ClassOverviewButton(object sender, RoutedEventArgs e)
         {
+            var userOverview = new UserOverviewView();
+            userOverview.Activate();
 
         }
 

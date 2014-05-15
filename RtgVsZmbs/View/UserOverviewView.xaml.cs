@@ -26,15 +26,15 @@ namespace RtgVsZmbs.View
             LoadUsers();
         }
 
-        private List<User> UserList;
+        private List<User> _userList;
 
         public void LoadUsers()
         {
-            UserList = new List<User>();
+            _userList = new List<User>();
             var users = SQLFactory.getAllUsers();
             foreach(var user in users)
             {
-                UserList.Add(user);
+                _userList.Add(user);
             }
         }
     }
