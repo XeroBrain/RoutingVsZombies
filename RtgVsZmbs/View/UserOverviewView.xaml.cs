@@ -31,6 +31,7 @@ namespace RtgVsZmbs.View
         public void LoadUsers()
         {
             UserList = new List<User>();
+            SQLFactory.initConnection();
             var users = SQLFactory.getAllUsers();
             foreach(var user in users)
             {
