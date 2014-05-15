@@ -8,7 +8,7 @@
     using System;
 
 
-    class Quizcard
+    public class Quizcard
     {
         public int MaximumPoints { get; private set; }
 

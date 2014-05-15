@@ -1,16 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using RtgVsZmbs.Objects;
 
 namespace RtgVsZmbs.View
@@ -26,12 +15,17 @@ namespace RtgVsZmbs.View
             LoadUsers();
         }
 
+        public List<User> UserList
+        {
+            get { return _userList;}
+        }
+
         private List<User> _userList;
 
         public void LoadUsers()
         {
             _userList = new List<User>();
-            var users = SQLFactory.getAllUsers();
+            var users = SQLFactory.GetAllUsers();
             foreach(var user in users)
             {
                 _userList.Add(user);

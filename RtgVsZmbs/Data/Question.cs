@@ -7,7 +7,7 @@ using RtgVsZmbs.Objects;
 
 namespace RtgVsZmbs.Data
 {
-    class Question
+    public class Question
     {
         private int _level;
 

@@ -85,6 +85,9 @@
     <Compile Include="View\MainMenueView.xaml.cs">
       <DependentUpon>MainMenueView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\QuestionsOverviewView.xaml.cs">
+      <DependentUpon>QuestionsOverviewView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\SurvivalguideView.xaml.cs">
       <DependentUpon>SurvivalguideView.xaml</DependentUpon>
     </Compile>
@@ -121,6 +124,10 @@
     <Page Include="View\MainMenueView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\QuestionsOverviewView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\SurvivalguideView.xaml">
       <SubType>Designer</SubType>

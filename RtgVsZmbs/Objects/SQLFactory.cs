@@ -7,11 +7,11 @@ namespace RtgVsZmbs.Objects
 {
     internal class SQLFactory
     {
-        private static String serveraddress = "85.183.21.62";
-        private static String userid = "RVZLogin";
-        private static String password = "ZombieNation21!";
+        private const String Serveraddress = "85.183.21.62";
+        private const String Userid = "RVZLogin";
+        private const String Password = "ZombieNation21!";
         private static String dbname = "RoutingVsZombie";
-        private static String appname = "RoutingVsZombies_Client";
+        private const String AppName = "RoutingVsZombies_Client";
         private static SqlConnection _sqlcon = null;
 
         private SQLFactory()
@@ -19,32 +19,32 @@ namespace RtgVsZmbs.Objects
             // this is an utility class and must not be extended
         }
 
-        public static void initConnection()
+        public static void InitConnection()
         {
             var conBuilder = new SqlConnectionStringBuilder();
-            conBuilder.DataSource = serveraddress;
-            conBuilder.UserID = userid;
-            conBuilder.Password = password;
-            conBuilder.ApplicationName = appname;
+            conBuilder.DataSource = Serveraddress;
+            conBuilder.UserID = Userid;
+            conBuilder.Password = Password;
+            conBuilder.ApplicationName = AppName;
             conBuilder.ApplicationIntent = ApplicationIntent.ReadWrite;
             _sqlcon = new SqlConnection(conBuilder.ConnectionString);
             _sqlcon.Open();
         }
 
-        public static void closeConnection()
+        public static void CloseConnection()
         {
             _sqlcon.Close();
             _sqlcon = null;
         }
 
-        public static Question[] getAllQuestions()
+        public static Question[] GetAllQuestions()
         {
-            String sqlStatement = "SELECT queid FROM Questions;";
-            List<Question> questions = new List<Question>();
+            const string sqlStatement = "SELECT queid FROM Questions;";
+            var questions = new List<Question>();
             SqlCommand sqlcommand = _sqlcon.CreateCommand();
             sqlcommand.CommandText = sqlStatement;
             SqlDataReader sqldata = sqlcommand.ExecuteReader();
-            List<Int64> ids = new List<Int64>();
+            var ids = new List<Int64>();
             while (sqldata.Read())
             {
                 ids.Add(sqldata.GetInt64(1));
@@ -52,12 +52,12 @@ namespace RtgVsZmbs.Objects
             sqldata.Close();
             foreach (Int64 id in ids)
             {
-                questions.Add(getQuestion(id));
+                questions.Add(GetQuestion(id));
             }
             return questions.ToArray();
         }
 
-        public static Question getQuestion(Int64 id)
+        public static Question GetQuestion(Int64 id)
         {
             String sqlStatement =
                 "SELECT queid, queLevel, queQuestion, igsType, igsImage, awsid, awsAnswer, awsTypeid, awsIsCorrect " +
@@ -71,7 +71,7 @@ namespace RtgVsZmbs.Objects
             Int64 qid = 0;
             String qtext = "";
             int qlevel = 1;
-            List<QuizAnswer> answers = new List<QuizAnswer>();
+            var answers = new List<QuizAnswer>();
             // TODO Zugriff auf Spalten per name statt Index
             while (sqldata.Read())
             {
@@ -92,20 +92,20 @@ namespace RtgVsZmbs.Objects
             return null;
         }
 
-        public static bool saveQuestion(Question qc)
+        public static bool SaveQuestion(Question qc)
         {
             // TODO Speicherfunktion für Questions (und ihre Antworten)
             return false;
         }
 
-        public static User[] getAllUsers()
+        public static User[] GetAllUsers()
         {
-            String sqlStatement = "SELECT usrid,usrLogin, usrPassword, usrIsAdmin " +
-                                  "FROM Users;";
-            SqlCommand sqlcommand = _sqlcon.CreateCommand();
+            const string sqlStatement = "SELECT usrid,usrLogin, usrPassword, usrIsAdmin " +
+                                        "FROM Users;";
+            var sqlcommand = _sqlcon.CreateCommand();
             sqlcommand.CommandText = sqlStatement;
             SqlDataReader sqldata = sqlcommand.ExecuteReader();
-            List<User> users = new List<User>();
+            var users = new List<User>();
             while (sqldata.Read())
             {
                 users.Add(new User(sqldata.GetInt32(0), sqldata.GetString(1), sqldata.GetString(2),sqldata.GetBoolean(3)));

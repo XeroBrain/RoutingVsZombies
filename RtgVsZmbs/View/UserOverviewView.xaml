@@ -23,9 +23,7 @@
             <Button Background="#BADA55" Height="20" VerticalAlignment="Top">Delete Pupil</Button>
         </StackPanel>
         <StackPanel Grid.Column="2" Grid.Row="1">
-            <!-- Die Kombo box Soll zur auswahl der klassen dienen-->
             <ListBox DataContext="{Binding UserList}"></ListBox>
-            <!-- Hier soll dann die anzeige der schüler rein -->
         </StackPanel>
     </Grid>
 </Window>
