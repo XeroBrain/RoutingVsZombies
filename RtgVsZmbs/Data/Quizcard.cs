@@ -38,6 +38,14 @@
             Level = level;
         }
 
+        public Quizcard(int id,string question,int level,List<QuizAnswer> answers)
+        {
+            ID = id;
+            Question = question;
+            Level = level;
+            Answers = answers;
+        }
+
         public int ID { get; private set; }
 
         public string Question { get; private set; }
@@ -90,10 +98,7 @@
                 Answers = new List<QuizAnswer>();
                 foreach(DataRow answer in dataTableAnswers.Rows)
                 {
-                    Answers.Add(new QuizAnswer((int)answer["awsid"],
-                        (string)answer["awsAnswer"],
-                        (bool)answer["awsIsCorrect"],
-                        ConvertToInt(answer["awsTypeid"])));
+                    Answers.Add(new QuizAnswer((int)answer["awsid"],(string)answer["awsAnswer"],(bool)answer["awsIsCorrect"],ConvertToInt(answer["awsTypeid"])));
                 }
             }
             return true;

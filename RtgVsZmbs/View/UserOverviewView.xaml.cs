@@ -25,6 +25,7 @@ namespace RtgVsZmbs.View
         public void LoadUsers()
         {
             _userList = new List<User>();
+            SQLFactory.InitConnection();
             var users = SQLFactory.GetAllUsers();
             foreach(var user in users)
             {

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Data;
 using RtgVsZmbs.Data;
 
 namespace RtgVsZmbs.Objects
@@ -37,23 +38,27 @@ namespace RtgVsZmbs.Objects
             _sqlcon = null;
         }
 
-        public static Question[] GetAllQuestions()
+        public static Quizcard[] GetAllQuestions()
         {
-            const string sqlStatement = "SELECT queid FROM Questions;";
-            var questions = new List<Question>();
-            SqlCommand sqlcommand = _sqlcon.CreateCommand();
-            sqlcommand.CommandText = sqlStatement;
-            SqlDataReader sqldata = sqlcommand.ExecuteReader();
-            var ids = new List<Int64>();
-            while (sqldata.Read())
+            const string sqlStatement = "Select queid,queLevel,queQuestion from Questions "
+                + "Select awsid,awsAnswer,awsTypeid,awsIsCorrect,awsqueid from Answers";
+            var questions = new List<Quizcard>();
+            var adapter = new SqlDataAdapter(sqlStatement,_sqlcon);
+            var dataSet = new DataSet();
+            adapter.Fill(dataSet);
+
+            foreach(DataRow question in dataSet.Tables[0].Rows)
             {
-                ids.Add(sqldata.GetInt64(1));
-            }
-            sqldata.Close();
-            foreach (Int64 id in ids)
-            {
-                questions.Add(GetQuestion(id));
-            }
+                var answers = new List<QuizAnswer>();
+                foreach (DataRow answer in dataSet.Tables[1].Rows)
+                {
+                    if ((int)question["queid"] == (int)answer["awsqueid"])
+                    {
+                        answers.Add(new QuizAnswer((int)answer["awsid"], (string)answer["awsAnswer"], (bool)answer["awsIsCorrect"], ConvertToInt(answer["awsTypeid"])));
+                    }
+                }
+                questions.Add(new Quizcard((int)question["queid"], (string)question["queQuestion"], (int)question["queLevel"], answers));
+            }            
             return questions.ToArray();
         }
 
@@ -82,7 +87,7 @@ namespace RtgVsZmbs.Objects
                     qtext = sqldata.GetString(3);
                 }
                 // TODO Unterstützung für Bilder importieren
-                answers.Add(new QuizAnswer(sqldata.GetInt64(6), sqldata.GetString(7), sqldata.GetBoolean(9), sqldata.GetInt32(8)));
+                answers.Add(new QuizAnswer(sqldata.GetInt32(6), sqldata.GetString(7), sqldata.GetBoolean(9), sqldata.GetInt32(8)));
             }
             sqldata.Close();
             if (answers.Count != 0)
@@ -129,6 +134,19 @@ namespace RtgVsZmbs.Objects
             }
             sqldata.Close();
             return user;
+        }
+
+        private static int ConvertToInt(object zahl)
+        {
+            try
+            {
+                var temp = Convert.ToInt32(zahl);
+                return temp;
+            }
+            catch
+            {
+                return 0;
+            }
         }
     }
 }
