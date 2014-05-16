@@ -41,10 +41,5 @@ namespace RtgVsZmbs.View
             userOverview.Activate();
             userOverview.Show();
         }
-
-
-
-
-
     }
 }

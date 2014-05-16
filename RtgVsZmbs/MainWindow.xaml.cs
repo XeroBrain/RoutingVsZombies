@@ -70,7 +70,7 @@ namespace RtgVsZmbs
             }
 
 
-        }
+        }    
         
         public static string GenerateHash(string text, Encoding enc = null)
         {
