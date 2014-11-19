@@ -96,3 +96,4 @@ C:\GIT\GitHub\RoutingVsZombies\RoutingVsZombies\RtgVsZmbs\obj\Debug\View\Questio
 C:\GIT\GitHub\RoutingVsZombies\RoutingVsZombies\RtgVsZmbs\obj\Debug\View\QuestionsOverviewView.g.cs
 C:\Users\meins100\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\View\QuestionsOverviewView.baml
 C:\Users\meins100\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\View\QuestionsOverviewView.g.cs
+C:\Users\meins100\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\RtgVsZmbs.csprojResolveAssemblyReference.cache

@@ -69,8 +69,6 @@ namespace RtgVsZmbs
             {
                 InvalidLoginTxt.Visibility = Visibility.Visible;
             }
-
-
         }    
         
         public static string GenerateHash(string text, Encoding enc = null)
