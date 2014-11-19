@@ -96,3 +96,13 @@ C:\GIT\GitHub\RoutingVsZombies\RoutingVsZombies\RtgVsZmbs\obj\Debug\View\Questio
 C:\GIT\GitHub\RoutingVsZombies\RoutingVsZombies\RtgVsZmbs\obj\Debug\View\QuestionsOverviewView.g.cs
 C:\Users\meins100\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\View\QuestionsOverviewView.baml
 C:\Users\meins100\Documents\GitHub\RoutingVsZombies\RtgVsZmbs\obj\Debug\View\QuestionsOverviewView.g.cs
+C:\GIT\RoutingVsZombies\RtgVsZmbs\obj\Debug\View\QuestionsOverviewView.baml
+C:\GIT\RoutingVsZombies\RtgVsZmbs\obj\Debug\View\UserOverviewView.baml
+C:\GIT\RoutingVsZombies\RtgVsZmbs\obj\Debug\View\QuestionsOverviewView.g.cs
+C:\GIT\RoutingVsZombies\RtgVsZmbs\obj\Debug\View\UserOverviewView.g.cs
+C:\GIT\RoutingVsZombies\RtgVsZmbs\bin\Debug\Caliburn.Micro.dll
+C:\GIT\RoutingVsZombies\RtgVsZmbs\bin\Debug\Caliburn.Micro.Platform.dll
+C:\GIT\RoutingVsZombies\RtgVsZmbs\bin\Debug\System.Windows.Interactivity.dll
+C:\GIT\RoutingVsZombies\RtgVsZmbs\bin\Debug\Caliburn.Micro.xml
+C:\GIT\RoutingVsZombies\RtgVsZmbs\bin\Debug\Caliburn.Micro.Platform.xml
+C:\GIT\RoutingVsZombies\RtgVsZmbs\bin\Debug\System.Windows.Interactivity.xml
