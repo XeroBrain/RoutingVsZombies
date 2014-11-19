@@ -119,11 +119,11 @@ namespace RtgVsZmbs.Objects
             return users.ToArray();
         }
 
-        public static User GetUser(string login)
+        public static User GetUserByUserName(string userName)
         {
             String sqlStatement = "SELECT usrLogin, usrPassword, usrIsAdmin " +
                                   "FROM Users " +
-                                  "WHERE usrLogin = '" + login + "';";
+                                  "WHERE usrLogin = '" + userName + "';";
             SqlCommand sqlcommand = _sqlcon.CreateCommand();
             sqlcommand.CommandText = sqlStatement;
             SqlDataReader sqldata = sqlcommand.ExecuteReader();
